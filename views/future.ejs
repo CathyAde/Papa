@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <h1>Mes Projections</h1>
+        <div class="projection-container">
+            <div class="projection-item">
+                <i class="fas fa-rocket"></i>
+                <h3>Objectif 1</h3>
+                <p>[Description de ton premier objectif, pourquoi il est important et comment tu prévois de l'atteindre.]</p>
+            </div>
+            <div class="projection-item">
+                <i class="fas fa-briefcase"></i>
+                <h3>Objectif 2</h3>
+                <p>[Description de ton deuxième objectif, pourquoi il est important et comment tu prévois de l'atteindre.]</p>
+            </div>
+            <div class="projection-item">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Objectif 3</h3>
+                <p>[Description de ton troisième objectif, pourquoi il est important et comment tu prévois de l'atteindre.]</p>
+            </div>
+        </div>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

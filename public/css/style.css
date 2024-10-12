@@ -1,0 +1,300 @@
+/* styles pour le header */
+header {
+    background-color: #333; /* Couleur de fond */
+    padding: 10px 20px; /* Espacement intérieur */
+}
+
+header .logo h1 {
+    color: #fff; /* Couleur du texte */
+    display: inline; /* Afficher le logo sur la même ligne que les liens */
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between; /* Espacement entre le logo et les liens */
+    align-items: center; /* Alignement vertical */
+}
+
+header .nav-links {
+    list-style: none; /* Supprimer les puces de la liste */
+    padding: 0; /* Supprimer le remplissage par défaut */
+}
+
+header .nav-links li {
+    display: inline; /* Afficher les éléments de la liste sur la même ligne */
+    margin-left: 20px; /* Espacement entre les liens */
+}
+
+header .nav-links a {
+    color: #fff; /* Couleur des liens */
+    text-decoration: none; /* Supprimer le soulignement */
+    transition: color 0.3s; /* Transition pour un effet au survol */
+}
+
+header .nav-links a:hover {
+    color: #ffd700; /* Couleur au survol */
+}
+
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0; /* Espacement vertical */
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 20px;
+    border: 5px solid #ffcc00; /* Bordure colorée */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre portée */
+}
+
+.profile-pic:hover {
+    transform: scale(1.05); /* Zoom au survol */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Ombre plus prononcée */
+}
+
+h2 {
+    margin-top: 15px; /* Espacement au-dessus du nom */
+    font-weight: 700; /* Poids du texte */
+    color: #333; /* Couleur du texte */
+}
+
+p {
+    font-size: 16px; /* Taille du texte */
+    color: #666; /* Couleur de la description */
+    text-align: center; /* Centrer le texte */
+    max-width: 300px; /* Largeur maximale pour un bon rendu */
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Couleur de fond légère */
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0; /* Espacement vertical */
+    color: #333; /* Couleur du texte */
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Disposition en grille */
+    gap: 20px; /* Espacement entre les éléments */
+    padding: 20px; /* Espacement interne */
+    max-width: 1200px; /* Largeur maximale */
+    margin: 0 auto; /* Centrage */
+}
+
+.form-item {
+    background-color: white; /* Fond blanc pour chaque section */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    text-align: center; /* Centrer le texte */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    transition: transform 0.3s ease; /* Transition pour l'effet d'animation */
+}
+
+.form-item:hover {
+    transform: translateY(-5px); /* Effet de levée au survol */
+}
+
+.icon {
+    font-size: 40px; /* Taille des icônes */
+    color: #ffcc00; /* Couleur des icônes */
+    margin-bottom: 10px; /* Espacement au-dessous des icônes */
+}
+
+h3 {
+    margin: 15px 0 10px; /* Espacement au-dessus et au-dessous des titres */
+    font-weight: 700; /* Poids du texte */
+    color: #333; /* Couleur des titres */
+}
+
+p {
+    font-size: 16px; /* Taille du texte */
+    color: #666; /* Couleur de la description */
+    line-height: 1.5; /* Hauteur de ligne pour plus de lisibilité */
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Couleur de fond légère */
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0; /* Espacement vertical */
+    color: #333; /* Couleur du texte */
+}
+
+.contact-form {
+    max-width: 600px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrage */
+    background-color: white; /* Fond blanc pour le formulaire */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+
+label {
+    display: block; /* Chaque label prend une ligne entière */
+    margin-bottom: 5px; /* Espacement au-dessous des labels */
+    color: #333; /* Couleur des labels */
+    font-weight: 700; /* Gras */
+}
+
+input, textarea {
+    width: 100%; /* Largeur complète */
+    padding: 10px; /* Espacement interne */
+    margin-bottom: 15px; /* Espacement au-dessous des champs */
+    border: 1px solid #ccc; /* Bordure grise */
+    border-radius: 4px; /* Coins arrondis */
+    font-size: 16px; /* Taille de police */
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff; /* Couleur de la bordure au focus */
+    outline: none; /* Suppression du contour par défaut */
+}
+
+button {
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Suppression de la bordure */
+    padding: 10px 15px; /* Espacement interne */
+    border-radius: 4px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de main */
+    font-size: 16px; /* Taille de police */
+    transition: background-color 0.3s; /* Transition pour le hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Couleur du bouton au survol */
+}
+
+.success {
+    background-color: #d4edda; /* Fond vert clair pour le message de succès */
+    color: #155724; /* Couleur du texte */
+    padding: 10px; /* Espacement interne */
+    border: 1px solid #c3e6cb; /* Bordure verte */
+    border-radius: 4px; /* Coins arrondis */
+    margin: 20px auto; /* Espacement autour du message */
+    text-align: center; /* Centrage du texte */
+}
+
+main {
+    padding: 20px; /* Espacement interne */
+    background-color: #f9f9f9; /* Couleur de fond pour le contenu principal */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px; /* Espacement au-dessous du titre */
+    color: #333; /* Couleur du texte */
+}
+
+.projection-container {
+    display: flex; /* Utiliser Flexbox pour aligner les éléments */
+    flex-direction: column; /* Disposition en colonne */
+    align-items: center; /* Centrer les éléments */
+    gap: 20px; /* Espacement entre les éléments */
+}
+
+.projection-item {
+    background-color: white; /* Fond blanc pour les éléments */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    width: 80%; /* Largeur des éléments */
+    text-align: center; /* Centrer le texte */
+}
+
+.projection-item h3 {
+    margin-top: 10px; /* Espacement au-dessus du sous-titre */
+    color: #007bff; /* Couleur du titre */
+}
+
+.projection-item p {
+    color: #555; /* Couleur du texte de description */
+}
+
+main {
+    padding: 20px; /* Espacement interne */
+    background-color: #f9f9f9; /* Couleur de fond */
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333; /* Couleur du texte */
+}
+
+.projects-container {
+    display: grid; /* Utilisation d'une grille */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Colonnes responsives */
+    gap: 20px; /* Espacement entre les cartes */
+    margin: 20px 0; /* Marges autour de la grille */
+}
+
+.project-card {
+    background-color: white; /* Fond blanc pour les cartes */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 15px; /* Espacement interne */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    text-align: center; /* Centre le texte */
+    transition: transform 0.3s; /* Effet de transition */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Effet de survol */
+}
+
+.project-image {
+    max-width: 100%; /* S'assure que l'image ne dépasse pas la carte */
+    border-radius: 8px; /* Coins arrondis pour l'image */
+}
+
+.btn {
+    display: inline-block; /* Bouton en ligne */
+    margin-top: 10px; /* Espacement au-dessus du bouton */
+    padding: 10px 15px; /* Espacement interne du bouton */
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none; /* Pas de soulignement */
+    transition: background-color 0.3s; /* Effet de transition pour le survol */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Couleur du bouton au survol */
+}
+
+.technologies-list {
+    list-style: none; /* Pas de puces */
+    padding: 0; /* Pas de remplissage */
+}
+
+.technologies-list li {
+    display: flex; /* Flex pour aligner l'icône et le texte */
+    align-items: center; /* Centrer verticalement */
+    margin: 10px 0; /* Marges entre les éléments */
+    font-size: 18px; /* Taille de la police */
+}
+
+.technologies-list i {
+    margin-right: 10px; /* Espacement entre l'icône et le texte */
+    color: #007bff; /* Couleur des icônes */
+}
+
