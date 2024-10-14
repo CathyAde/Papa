@@ -298,3 +298,30 @@ h1, h2 {
     color: #007bff; /* Couleur des icônes */
 }
 
+html, body {
+    height: 100%; /* Assurez-vous que le body prend toute la hauteur de la fenêtre */
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Organise les éléments en colonne */
+}
+
+main {
+    flex: 1; /* Permet au contenu principal d'occuper l'espace disponible */
+}
+
+footer {
+    display: flex; /* Utilise flexbox pour centrer le contenu */
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    padding: 1rem; /* Ajoute un peu d'espace autour du texte */
+    background-color: #343a40; /* Couleur de fond du footer */
+    color: white; /* Couleur du texte */
+    width: 100%; /* Prend toute la largeur de la page */
+    position: relative; /* Assure que le footer reste sous le contenu */
+}
+
+
+
