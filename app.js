@@ -255,6 +255,12 @@ app.get('/future', (req, res) => {
   res.render('future', { title: 'Mes projections' });
 });
 
+app.get('/products', async (req, res) => {
+    const products = await Product.find(); // Vous devrez remplacer par votre modèle de produit
+    res.render('products', { title: 'Produits', products: products });
+});
+
+
 // Route pour afficher le formulaire de contact
 app.get('/contact', (req, res) => {
   res.render('contact', { title: 'Contact', success: false, error: null });
